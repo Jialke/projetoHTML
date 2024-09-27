@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style_geral.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/mapa.css" type="text/css">
+    <link rel="icon" href="../assets/img/ccg_logo.png">
+    <title>Mapa</title>
+</head>
+<body>
+    <nav class="container">
+        <div class="menu-titulo">
+            <img src="../assets/img/ccg_logo.png">
+            <h1>Crazy Cats Gang</h1>
+        </div>
+        <div class="menu-botoes">
+            <a href="/paginas/inicio.html">Inicio</a>
+            <a href="/paginas/procedimentos.html">Procedimentos</a>
+            <a href="/paginas/resgates.html">Resgate</a>
+            <a href="/paginas/mapa.html">Mapa</a>
+            <a href="/paginas/funcionarios.html">Funcionarios</a>
+            <a href="/index.html">Sair</a>
+        </div>
+    </nav>
+
+    <div class="content fadeIn">
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15846514.721067889!2d-61.98558871601276!3d-14.149144747654386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1716851074578!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            <div class="botao">
+                <a href="/paginas/informacao_gatos.html"><button>o</button></a>
+            </div>
+        </div>  
+        <div class="filtro">
+            <h2>Regiao</h2>
+            <div class="filtro1">
+                <input type="checkbox" class="checkbox" id="checkbox1">
+                <a href="#" class="checkbox-link">Norte</a>
+            </div>
+            <div class="filtro1">
+                <input type="checkbox" class="checkbox" id="checkbox2">
+                <a href="#" class="checkbox-link">Nordeste</a>
+            </div>
+            <div class="filtro1">
+                <input type="checkbox" class="checkbox" id="checkbox3">
+                <a href="#" class="checkbox-link">Centro Oeste</a>
+            </div>
+            <div class="filtro1">
+                <input type="checkbox" class="checkbox" id="checkbox4">
+                <a href="#" class="checkbox-link">Sul</a>
+            </div>
+            <div class="filtro1">
+                <input type="checkbox" class="checkbox" id="checkbox4">
+                <a href="#" class="checkbox-link">Sudeste</a>
+            </div>
+            <h2>data</h2>
+            <div class="filtro1">
+                <div class="filtro-date">
+                    <input type="date" name="filtro on" id="">
+                    <input type="date" name="filtro on" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.checkbox-link').forEach(function(link, index) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Impede o comportamento padrão do link
+                var checkbox = document.querySelectorAll('.checkbox')[index];
+                checkbox.checked = !checkbox.checked;
+            });
+        });
+    </script>
+</body>
+</html>

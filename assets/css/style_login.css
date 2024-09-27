@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightyellow;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 3px;
+}
+
+.container-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 205, 0);
+}
+
+.container-img img {
+    padding: 20%;
+}
+
+.container-img img{
+    border-radius: 3px 0 0 3px;
+}
+
+.login_img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.title-login {
+    margin-bottom: 30px;
+}
+
+.title-login h1 {
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 22%;
+}
+
+.title-login h1::after {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 0.3rem;
+    background-color: black;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 400px;
+}
+
+.input-box input {
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-box input:focus {
+    background-color: rgb(241, 241, 241);
+    outline: 2px solid rgb(247, 205, 0);
+}
+
+.input-box input::placeholder {
+    font-size: 15px;
+}
+
+.input-box label {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-login button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(255, 255, 139);
+    box-shadow: 1px 1px 3px black;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-login button:hover {
+    cursor: pointer;
+    background-color: rgb(247, 205, 0);
+}
+
+.fadeIn{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
