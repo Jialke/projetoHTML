@@ -1,0 +1,1 @@
+Projeto desenvolvido em equipe na Pontifícia Universidade Católica do Paraná para a ONG CrazyCatGang com o objetivo de facilitar o gerenciamento de pedidos de resgates de gatinhos em diversas regiões de Curitiba.
